@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Kanit&family=Lily+Script+One&family=Lora&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Satisfy&display=swap');
+
+
+.body {
+    background-color: rgb(40, 40, 40);
+    min-width: 100%;
+    height: 80vh;
+    color: antiquewhite;
+
+}
+
+.linetilt {
+    /* transform: ; */
+    transform: rotate(-20deg) translate(-50px, -100px);
+    width: 100vw;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+    z-index: -1;
+
+}
+
+.linetiltsmall {
+    transform: rotate(-20deg) translate(-150px, 120px);
+    width: 10vw;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+    z-index: -1;
+    animation: linetiltsmallani 2s infinite ease-in-out;
+
+}
+
+.linetiltsmall1 {
+    transform: rotate(-20deg) translate(-150px, 142px);
+    width: 10vw;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+    z-index: -1;
+    animation: linetiltsmallani1 2s infinite ease-in-out;
+
+}
+
+.linetiltsmallinvert {
+
+    transform: rotate(-20deg) translate(420px, 145px);
+    width: 10vw;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+    z-index: -1;
+    animation: linetiltsmallinvertani 2s infinite ease-in-out;
+
+}
+
+.linetiltsmallinvert1 {
+
+    transform: rotate(-20deg) translate(420px, 122px);
+    width: 10vw;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+    ;
+    z-index: -1;
+    animation: linetiltsmallinvertani1 2s infinite ease-in-out;
+
+}
+
+.homeGrid {
+    padding-top: 10vh;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.intro {
+    padding: 2px;
+    padding-top: 5%;
+    width: 40%;
+    z-index: 1;
+}
+
+.skill {
+    padding: auto 15px auto 15px;
+    color: rgb(232, 158, 158);
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+}
+
+.name {
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+    font-size: 50px;
+    font-family: 'Geologica', sans-serif;
+}
+
+.introdata {
+    font-weight: bolder;
+    margin: auto 15px auto 5px;
+    font-family: 'Geologica', sans-serif;
+    color: grey;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.logos {
+    width: 40%;
+    padding-left: 10%;
+    padding-top: 5%;
+    z-index: 1;
+
+}
+
+.alllogos {
+    padding-top: 10%;
+}
+
+.homelinev1,
+.homelinev2 {
+    height: 90%;
+    width: 4px;
+    background-color: rgb(99, 87, 87);
+    transform: translate(1450px, -300px);
+
+}
+
+.homelinev1 {
+    animation: homelinev1ani 1s 1 ease-in-out;
+}
+
+.homelinev2 {
+    background-color: rgb(129, 80, 89);
+    height: 60%;
+    transform: translate(1440px, -700px);
+    /* animation: homelinev2ani 1s infinite ease-in-out; */
+}
+
+.homelineh1 {
+    height: 4px;
+    width: 90%;
+    background-color: rgb(134, 211, 18);
+    transform: translate(-400px, -700px);
+}
+
+@keyframes homelinev2ani {
+    0.1% {
+        height: 0%;
+        transform: translate(1440px, -700px);
+    }
+
+    100% {
+        height: 60%;
+        transform: translate(1440px, -700px);
+    }
+}
+
+@keyframes homelinev1ani {
+    0.1% {
+        height: 0%;
+        transform: translate(1450px, -300px);
+    }
+
+    100% {
+        height: 90%;
+        transform: translate(1450px, -300px);
+    }
+}
+
+@keyframes htmllogo {
+    0.1% {
+        transform: translate(0px);
+        visibility: inherit;
+    }
+
+    50% {
+        visibility: hidden;
+    }
+
+    100% {
+        transform: translate(0px, 220px);
+        visibility: hidden;
+    }
+
+}
+
+@keyframes linetiltsmallani {
+    100% {
+        transform: rotate(-20deg) translate(420px, 120px);
+    }
+}
+
+@keyframes linetiltsmallani1 {
+
+    /* 25%  {transform: rotate(-20deg) translate(50px,120px);} */
+    /* 50%  {transform: rotate(-20deg) translate(200px,120px);}     */
+    100% {
+        transform: rotate(-20deg) translate(420px, 142px);
+    }
+}
+
+@keyframes linetiltsmallinvertani {
+
+    100% {
+        transform: rotate(-20deg) translate(-150px, 145px);
+    }
+}
+
+@keyframes linetiltsmallinvertani1 {
+
+    100% {
+        transform: rotate(-20deg) translate(-150px, 122px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homeGrid {
+        flex-direction: column;
+    }
+
+    .intro {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logos {
+        width: 80%;
+    }
+}

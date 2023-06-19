@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&family=Ubuntu+Mono&display=swap');
+
+.footer {
+    color: aliceblue;
+    height: 12.5vh;
+    background-color: rgb(136, 55, 55);
+    width: 100%;
+    text-align: center;
+    padding-top: 5vh;
+    z-index: 2;
+}
+
+/* project card */
+
+.projectCard {
+    margin: 3%;
+    width: 25%;
+    height: 30vh;
+    background-color: rgb(136, 55, 55);
+    border-radius: 9px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 10px 10px 3px rgb(14, 12, 12);
+    /* opacity: 0; */
+    animation: projectCard 3s   1  ease-in-out;
+
+}
+.projectCard:hover{
+    box-shadow: 0px 0px 0px rgb(14, 12, 12);
+    cursor: pointer;
+    /* background-color: #5374932b; */
+    /* transform: rotateX(360deg) rotateY(360deg); */
+}
+.projectCard:hover .pname{
+    color: aliceblue;
+}
+
+
+.pname {
+    padding-top: 10%;
+    height: 50%;
+    font-weight: bold;
+    font-size: 28px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: rgb(40, 40, 40);
+    transition: all 0.5s ease-in-out;
+}
+.pdescription{
+    font-size: large;
+    /* display: none; */
+    color: #f4aaaa;
+    padding-top: 5%;
+    /* padding-left: 5%; */
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+    transition: all 1s ease-in-out;
+    text-align: center;
+}
+@keyframes projectCard {
+    0.1%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Merriweather:wght@300&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&family=Tilt+Prism&family=Ubuntu+Mono&display=swap');
+
+
+.body,
+.body1 {
+    background-color: rgb(40, 40, 40);
+
+    color: antiquewhite;
+
+}
+
+.body {
+    min-width: 100%;
+    min-height: 80vh;
+}
+
+.body1 {
+    width: 100%;
+    height: 80vh;
+}
+
+.heading,
+.heading1 {
+    text-shadow: 4px 2px rgb(132, 96, 96);
+    text-align: center;
+    font-size: 100px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: rgb(153, 154, 155);
+    font-family: 'Merriweather', serif;
+
+}
+
+.heading {
+    animation: ran 2.5s 1 ease;
+}
+
+.belowheading,
+.belowheading1 {
+    display: flex;
+    justify-content: center;
+}
+
+.l1 {
+    height: 3px;
+    background-color: rgb(232, 158, 158);
+    width: 20%;
+    transform: rotate(180deg);
+    animation: belowheading 2s 1 ease-out;
+}
+
+.l2 {
+    height: 3.5px;
+    background-color: rgb(232, 158, 158);
+    width: 20%;
+    animation: belowheading 2s 1 ease-out;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.button {
+    border: none;
+    background-color: rgb(40, 40, 40);
+    text-decoration: none;
+    color: #7c7a7a;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.button:hover {
+    color: aliceblue;
+    text-shadow: 1px 1px 3px grey;
+    transition: all 0.4s ease-in-out;
+}
+
+.projects {
+    padding-top: 4%;
+    padding-left: 3%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectCard {
+    margin: 1%;
+    width: 25%;
+    height: 30vh;
+    background-color: #a13636;
+    border: 2px solid wheat;
+
+}
+
+.c1 {
+    height: 10vh;
+    width: 10vh;
+    background-color: #7c7a7a;
+    border-radius: 50%;
+    box-shadow: 10px 27px 109px white;
+    opacity: 1;
+}
+
+.idpcard {
+    padding-left: 10%;
+    padding-top: 2%;
+    height: 60%;
+    width: 80%;
+    /* background-color: #fff; */
+    position: relative;
+}
+
+.idpname {
+
+    font-size: 30px;
+    color: rgb(222, 142, 155);
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+}
+
+.idpdescription {
+    font-size: 23px;
+    color: rgb(117, 116, 116);
+    font-family: 'Merriweather', serif;
+}
+
+.sourcecode {
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    color: #7c7a7a;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+
+}
+
+.techheading {
+    padding-bottom: 0%;
+    padding-top: 3%;
+    font-size: 23px;
+    color: rgb(225, 223, 223);
+    font-family: 'Merriweather', serif;
+}
+
+.tech {
+    text-transform: capitalize;
+    padding-right: 2%;
+    font-size: 23px;
+    color: rgb(117, 116, 116);
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+}
+
+.fulldesc {
+    font-size: 23px;
+    color: rgb(117, 116, 116);
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+}
+
+@keyframes belowheading {
+    0.1% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes ran {
+    0.1% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*  */
