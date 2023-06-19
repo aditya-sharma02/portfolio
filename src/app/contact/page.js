@@ -12,12 +12,15 @@ const page = () => {
         message: "",
     })
     const inputevent = (event) => {
-        var value = event.target.value;
-        var name = event.target.name;
+        const value = event.target.value;
+        const name = event.target.name;
 
         setm((preval) => {
-            return {...preval,name:value}
+            return {...preval,[name]:value}
         })
+    }
+    const funcsubmit = (e) => {
+        e.preventDefault(); 
         console.log(message)
     }
     return (
@@ -25,10 +28,10 @@ const page = () => {
             <Navbar />
             <div className={styles.body}>
                 <div className={styles.form}>
-                    <form >
+                    <form onSubmit={funcsubmit}>
                         <input onChange={inputevent} type="text" name="name" value={message.name} />
                         <input onChange={inputevent} type="email" name="email" value={message.email} />
-                        <textarea onChange={inputevent} name="message" value={message} />
+                        <textarea onChange={inputevent} name="message" value={message.message} />
                         <input type="submit" value="submit" />
                     </form>
                 </div>
