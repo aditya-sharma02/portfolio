@@ -62,7 +62,8 @@ const data = [
         title: "Porfolio",
         description: "A full-stack project used to make a website as portfolio",
         techused: ["full-stack", "next.js", "Mongodb", "css", "bootstrap"],
-        fulldesc: "build portfolio using power of NEXT.JS with basic animations"
+        fulldesc: "build portfolio using power of NEXT.JS with basic animations",
+        link:"https://github.com/aditya-sharma02/portfolio"
     },
 ]
 

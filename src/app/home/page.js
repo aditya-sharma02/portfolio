@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '@/app/styles/home.module.css'
+import styles from "@/app/styles/home.module.css"
 import Footer from '@/app/components/Footer'
 import Navbar from '../components/navbar'
 
@@ -16,7 +16,14 @@ export default function Home() {
         <div className={styles.linetiltsmall}></div>
 
         <div className={styles.linetilt}></div>
-
+        
+        <div className={styles.circle1}></div>
+        <div className={styles.circle2}></div>
+        <div className={styles.circle3}></div>
+        <div className={styles.circle4}></div>
+        {/* <div className={styles.deg45l} /> */}
+        <div className={styles.deg45l1} />
+        <div className={styles.deg45l2}/>
         {/* animation ends */}
         <div className={styles.homeGrid}>
           <div className={styles.intro}>
@@ -30,6 +37,7 @@ export default function Home() {
         </div>
         <div className={styles.homelinev1}></div>
         <div className={styles.homelinev2}></div>
+        
       </div>
       <Footer />
 

@@ -1,24 +1,28 @@
-import styles from "@/app/styles/home.module.css"
+import styles from "@/app/styles/components.module.css"
 
 const Logos = () => {
     return (
         <>
             <div className={styles.alllogos} >
-                <img src='html.png' />
-                <img src='css.png' />
-                <img src="c.png" />
-                <img src='c++.png' />
-                <img src='bootstrap.png' />
-                <img src='mongodb.png' />
-                <img src='mysql.png' />
-                <img src='nodejs.png' />
-                <img src='python.png' />
-                <img src='react.png' />
-                <img src='redux.png' />
-                <img src='typescript.png' />
-                <img src='js.png' style={{ height: "73px" }} />
-                <img src='nestjs.png' style={{ height: "96px" }} />
-                <img src='material-ui.png' style={{ height: "96px" }} />
+                <div className={styles.imglogo}>
+                    <img src='html.png' />
+                </div>
+                <div className={styles.imglogo}><img src='css.png' /></div>
+                <div className={styles.imglogo}><img src="c.png" /></div>
+                <div className={styles.imglogo}><img src='c++.png' /></div>
+                <div className={styles.imglogo}><img src='bootstrap.png' /></div>
+                <div className={styles.imglogo}><img src='mongodb.png' /></div>
+                <div className={styles.imglogo}><img src='mysql.png' /></div>
+                <div className={styles.imglogo}><img src='nodejs.png' /></div>
+                <div className={styles.imglogo}><img src='python.png' /></div>
+                <div className={styles.imglogo}><img src='react.png' /></div>
+                <div className={styles.imglogo}><img src='redux.png' /></div>
+                <div className={styles.imglogo}><img src='typescript.png' style={{ height: "93px" }} /></div>
+               
+                <div className={styles.imglogo}><img src='nestjs.png' style={{ height: "96px" }} /></div>
+                <div className={styles.imglogo}><img src='material-ui.png' style={{ height: "96px" }} /></div>
+                <div className={styles.imglogo}><img src='js.png' style={{ height: "73px" }} /></div>
+                <div className={styles.imglogo}><img src='github-logo.png' style={{ height: "73px",backgroundColor:"#fff",borderRadius:"50%" }} /></div>
             </div>
         </>
     )

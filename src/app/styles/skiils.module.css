@@ -1,0 +1,18 @@
+.body {
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    min-height: 80vh;
+    color: antiquewhite;
+    position: relative;
+
+}
+.alllogos {
+    width: 100vw;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+}
+
+.imglogo{
+    background-color: #fff;
+}

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import '@/app/page.module.css'
 const Navbar = () => {
     return (
         <>
@@ -20,6 +19,9 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" style={{zIndex:1,color:"pink"}} href="/contact">Contact</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" style={{zIndex:1,color:"pink"}} href="/skills">Skills</Link>
                             </li>
                         </ul>
                     </div>

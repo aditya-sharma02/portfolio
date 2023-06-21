@@ -5,7 +5,6 @@ import styles from "@/app/styles/projects.module.css"
 import Link from "next/link";
 
 const page = ({ params }) => {
-    console.log()
     var i = 0;
     var tempdata = data[params.id];
     return (
@@ -20,10 +19,14 @@ const page = ({ params }) => {
                     <div className={styles.l2} />
                 </div>
                 <div className={styles.idpcard}>
+                    <Link style={{textDecoration:"none"}} href={"/projects"} >
+                        <div className={styles.arrow}>↩</div>
+                    </Link>
+
                     <div className={styles.idpname}>{tempdata.title}</div>
                     <div className={styles.idpdescription}>{tempdata.description}</div>
                     <Link href={`${tempdata.link}`}>
-                        <div className={styles.sourcecode}><img src="/github-logo.png" height="40px" /></div>
+                        <div className={styles.sourcecode}><img src="/github-logo.png" height={60} /></div>
                     </Link>
 
                     <div className={styles.fulldesc}>

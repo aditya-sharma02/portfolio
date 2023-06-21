@@ -164,7 +164,15 @@
     font-family: 'Merriweather', serif;
     text-transform: capitalize;
 }
-
+.arrow{
+    font-size: 40px;
+    color: #7c7a7a;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+.arrow:hover{
+    color: #fff;
+}
 @keyframes belowheading {
     0.1% {
         width: 0%;

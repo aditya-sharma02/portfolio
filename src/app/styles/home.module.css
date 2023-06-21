@@ -6,6 +6,7 @@
     min-width: 100%;
     height: 80vh;
     color: antiquewhite;
+    position: relative;
 
 }
 
@@ -86,6 +87,7 @@
 }
 
 .name {
+    text-shadow: 0.5px 0.5px 41px white;
     color: white;
     font-weight: bolder;
     letter-spacing: 2.5px;
@@ -110,9 +112,6 @@
 
 }
 
-.alllogos {
-    padding-top: 10%;
-}
 
 .homelinev1,
 .homelinev2 {
@@ -140,7 +139,68 @@
     background-color: rgb(134, 211, 18);
     transform: translate(-400px, -700px);
 }
+.circle1,.circle2,.circle3,.circle4{
+    position: absolute;
+    top: 30%;
+    right: 75%;
+    width: 30vh;
+    height: 30vh;
+    box-shadow: 1px 1px 10px rgb(21, 21, 21);
+    border: 2px solid rgb(62, 62, 62);
+    border-radius: 50%;
+    /* transform: translate(1210px,-1250px); */
+    z-index: 0;
+    animation: circle1 15s infinite ease-in-out;
+}
+.circle2{
+    border: none;
+    border: 2px solid rgb(57, 57, 57);
+    top: 32%;
+    height: 27vh;
+    /* transform: translate(1210px,-1250px); */
+}
+.circle3{
+    border: none;
+    border: 2px solid rgb(62, 62, 62);
+    top: 34%;
+    height: 24vh;
+    /* right: 5%; */
+}
+.circle4{
+    border: none;
+    border: 2px solid rgb(78, 77, 77);
+    top: 36%;
+    height: 21vh;
+    /* right: 5%; */
+}
+.deg45l,.deg45l1,.deg45l2{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(62, 62, 62);
+    transform: rotate(-20deg) translate(-300px,305px);
+}
+.deg45l1{
+    width: 10%;
+    transform: rotate(-20deg) translate(900px,515px);
+    animation: deg45l1 5s   infinite  ease;
 
+}
+.deg45l2{
+    width: 10%;
+    transform: rotate(-20deg) translate(-300px,510px);
+    animation: deg45l2 5s infinite ease;
+
+}
+@keyframes deg45l1 {
+    100%{
+        transform: rotate(-20deg) translate(-300px,515px);
+    }
+}
+@keyframes deg45l2 {
+    100%{
+        transform: rotate(-20deg) translate(900px,510px);
+    }
+}
 @keyframes homelinev2ani {
     0.1% {
         height: 0%;
@@ -162,6 +222,11 @@
     100% {
         height: 90%;
         transform: translate(1450px, -300px);
+    }
+}
+@keyframes circle1 {
+    50%{
+        transform: rotate(180deg);
     }
 }
 

@@ -1,45 +1,49 @@
-import mongoose from "mongoose"
+// import mongoose from "mongoose"
 
-const MONGODB_URL = process.env.MONGODB_URL;
+// const MONGODB_URL = process.env.MONGODB_URL;
 
-if (!MONGODB_URL) {
-    throw new Error(
-        "Please define the MONGODB_URI environment variable inside .env.local"
-    )
-}
-
-
-let cached = global.mongoose;
-
-if (!cached) {
-    cached = global.mongoose = {con: null, promise: null}
-}
-
-const dbConnect = async () => {
-    if (cached.conn) {
-        return cached.conn;
-    }
+// if (!MONGODB_URL) {
+//     throw new Error(
+//         "Please define the MONGODB_URI environment variable inside .env.local"
+//     )
+// }
 
 
-// If a connection does not exist, we check if a promise is already in progress. If a promise is already in progress, we wait for it to resolve to get the connection
-    if (!cached.promise) {
-        const opts = {
-            bufferCommands : false
-        };
+// let cached = global.mongoose;
 
-        cached.promise = mongoose.connect(MONGODB_URL, opts).then((mongoose) => {
-            return mongoose
-        })
-    }
+// if (!cached) {
+//     cached = global.mongoose = {con: null, promise: null}
+// }
 
-    try {
-        cached.conn = await cached.promise;
-    } catch (e) {
-        cached.promise = null;
-        throw e;
-    }
+// const dbConnect = async () => {
+//     if (cached.conn) {
+//         return cached.conn;
+//     }
 
-    return cached.conn;
-}
 
-export default dbConnect;
+// // If a connection does not exist, we check if a promise is already in progress. If a promise is already in progress, we wait for it to resolve to get the connection
+//     if (!cached.promise) {
+//         const opts = {
+//             bufferCommands : false
+//         };
+
+//         cached.promise = mongoose.connect(MONGODB_URL, opts).then((mongoose) => {
+//             return mongoose
+//         })
+//     }
+
+//     try {
+//         cached.conn = await cached.promise;
+//     } catch (e) {
+//         cached.promise = null;
+//         throw e;
+//     }
+
+//     return cached.conn;
+// }
+
+// export default dbConnect;
+
+const mongoose = require("mongoose")
+
+mongoose.connect('mongodb://127.0.0.1:27017/database1').then(() => console.log("connection with mongo db eshtablished")).catch((e) => console.log(e))

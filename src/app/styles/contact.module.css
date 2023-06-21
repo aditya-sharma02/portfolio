@@ -1,7 +1,173 @@
-.body{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Josefin+Sans:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Merriweather:wght@300&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&family=Tilt+Prism&family=Ubuntu+Mono&display=swap');
+
+.body {
     background-color: rgb(40, 40, 40);
     width: 100%;
     height: 80vh;
     color: antiquewhite;
+    position: relative;
 
+}
+
+.form {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 40vh; */
+}
+
+.formbody {
+
+    /* padding: 4%; */
+    /* background-color: #fff; */
+    height: 100%;
+    width: 30%;
+    border: 3px solid grey;
+    background-color: rgb(40, 40, 40);
+    z-index: 2;
+    padding: 5%;
+    border-radius: 10%;
+    transition: all 1s ease-in-out;
+    height: 70vh;
+
+}
+
+.inputdiv {
+    padding-top: 3%;
+}
+
+.label {
+    letter-spacing: 1.7px;
+    color: grey;
+    text-transform: capitalize;
+    margin: 4px 4px 4px 4px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.input {
+    text-transform: capitalize;
+    padding-left: 9px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5px;
+    background-color: rgb(40, 40, 40);
+    border: 2px solid rgb(56, 55, 55);
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(214, 151, 151);
+}
+
+.button {
+    margin-top: 10px;
+    background-color: rgb(125, 83, 90);
+    border: none;
+    color: rgb(213, 231, 231);
+    padding: 3px 9px 3px 9px;
+    border-radius: 5px;
+
+}
+
+.success {
+    padding-top: 4%;
+    color: rgb(82, 218, 82);
+}
+
+.error {
+    padding-top: 4%;
+    color: rgb(255, 45, 45);
+}
+
+.plane {
+    background-image: url("/portfolio/public/plane.png");
+    transform: rotateZ(0deg) translate(370px, 160px);
+    animation: plane 2s 1 ease;
+}
+
+.clouds,
+.clouds1,
+.clouds2,
+.clouds3,
+.clouds4 {
+    position: absolute;
+    top: 2%;
+    right: 10%;
+    font-size: 180px;
+    color: rgb(118, 118, 118);
+    transition: all 1s ease;
+}
+.clouds{
+    color: rgb(118, 118, 118);
+    animation: clouds5 3s   infinite  ease-in;
+}
+
+.clouds1 {
+    position: absolute;
+    font-size: 200px;
+    top: 0%;
+    right: 15%;
+    color: rgb(120, 113, 113);
+    animation: clouds2 4s infinite ease;
+}
+
+.clouds2 {
+    position: absolute;
+    top: 2%;
+    right: 30%;
+    color: rgb(82, 82, 82);
+    animation: clouds 4s   infinite  ease;
+}
+
+.clouds3 {
+    position: absolute;
+    top: 2%;
+    right: 30%;
+    font-size: 60px;
+    animation: clouds3 4s infinite ease;
+}
+
+.clouds4 {
+    position: absolute;
+    top: 2%;
+    right: 7%;
+    font-size: 70px;
+}
+
+@keyframes plane {
+    0.1% {
+        transform: rotateZ(40deg) translate(-270px, 770px);
+    }
+
+    100% {
+        transform: rotateZ(0deg) translate(370px, 160px);
+    }
+}
+
+@keyframes clouds {
+    50% {
+        position: absolute;
+        top: 2%;
+        right: 32%;
+    }
+}
+
+@keyframes clouds2 {
+    50% {
+        font-size: 222px;
+    }
+}
+
+@keyframes clouds5 {
+    50% {
+        right: 8%;
+    }
+}
+
+@keyframes clouds3 {
+    50% {
+        font-size: 90px;
+    }
 }
