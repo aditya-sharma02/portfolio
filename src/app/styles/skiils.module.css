@@ -6,6 +6,7 @@
     position: relative;
 
 }
+
 .alllogos {
     width: 100vw;
     display: flex;
@@ -13,6 +14,141 @@
     /* flex-direction: column; */
 }
 
-.imglogo{
+.imglogo {
     background-color: #fff;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7,
+.circle8 {
+    height: 40vh;
+    /* background-color: #fff; */
+    width: 50%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    z-index: 0;
+    box-shadow: 0.5px 0.5px 20px rgb(94, 94, 94);
+    border: 2px solid grey;
+    border-radius: 50%;
+    animation: ani 35s infinite ease;
+}
+
+.circle1 {
+    transform: rotate(20deg);
+}
+
+.circle2 {
+    transform: rotate(40deg);
+}
+
+.circle3 {
+    transform: rotate(-40deg);
+}
+
+.circle4 {
+    transform: rotate(-20deg);
+}
+
+.circle5 {
+    transform: rotate(-60deg);
+}
+
+.circle6 {
+    transform: rotate(60deg);
+}
+
+.circle7 {
+    transform: rotate(80deg);
+}
+
+.circle8 {
+    transform: rotate(-80deg);
+}
+
+.star,
+.star1,
+.star2,
+.star3,
+.star4,
+.star5,
+.star6,
+.star7,
+.star8 {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
+    animation: star 5s infinite ease;
+    opacity: 0;
+}
+
+.star1 {
+    top: 30%;
+    right: 15%;
+}
+
+.star2 {
+    top: 85%;
+    right: 80%;
+}
+
+.star3 {
+    top: 85%;
+    right: 5%;
+}
+
+.star4 {
+    top: 65%;
+    right: 17%;
+    animation: star 5s 2s infinite ease;
+}
+
+.star5 {
+    top: 65%;
+    right: 87%;
+}
+
+.star6 {
+    top: 75%;
+    right: 97%;
+    animation: star 5s 2s infinite ease;
+
+}
+
+.star7 {
+    top: 55%;
+    animation: star 5s 2s infinite ease;
+
+    right: 9%;
+}
+
+.star8 {
+    top: 5%;
+    right: 7%;
+    animation: star 5s 2s infinite ease;
+
+}
+
+@keyframes ani {
+    50% {
+        transform: rotate(0deg) rotateZ(180deg) rotateY(360deg);
+        box-shadow: 1px 1px 15px #e4dfdf;
+    }
+}
+
+@keyframes star {
+    50% {
+        opacity: 1;
+        box-shadow: 0px 0px 15px #fff;
+    }
 }

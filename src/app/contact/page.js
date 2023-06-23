@@ -80,14 +80,7 @@ const page = () => {
                             </div>
                         </form>
                     </div>
-                    <div className={styles.plane}><img src="/plane.png" height={80} /></div>
                 </div>
-                <div className={styles.clouds}><FontAwesomeIcon icon={faCloud} className={styles["fa-duotone fa-cloud"]} /></div>
-                <div className={styles.clouds1}><FontAwesomeIcon icon={faCloud} className={styles["fa-duotone fa-cloud"]} /></div>
-                <div className={styles.clouds2}><FontAwesomeIcon icon={faCloud} className={styles["fa-duotone fa-cloud"]} /></div>
-                <div className={styles.clouds3}><FontAwesomeIcon icon={faCloud} className={styles["fa-duotone fa-cloud"]} /></div>
-                <div className={styles.clouds4}><FontAwesomeIcon icon={faCloud} className={styles["fa-duotone fa-cloud"]} /></div>
-                {/* <Logos /> */}
             </div>
             <Footer />
         </>
