@@ -57,7 +57,6 @@
     width: 10vw;
     height: 2px;
     background-color: rgb(62, 62, 62);
-    ;
     z-index: -1;
     animation: linetiltsmallinvertani1 2s infinite ease-in-out;
 
@@ -191,6 +190,10 @@
     animation: deg45l2 5s infinite ease;
 
 }
+.links{
+    text-decoration: none;
+    
+}
 @keyframes deg45l1 {
     100%{
         transform: rotate(-20deg) translate(-300px,515px);
@@ -288,5 +291,9 @@
 
     .logos {
         width: 80%;
+    }
+    .circle1,.circle2,.circle3,.circle4{
+        top: 30%;
+        right: 20%;       
     }
 }

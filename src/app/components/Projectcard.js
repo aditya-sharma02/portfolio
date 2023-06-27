@@ -14,8 +14,6 @@ const ProjectCard = (props) => {
                         {props.description}
                     </div>
                 </Link>
-
-                {/* <div className="" */}
             </div>
         </>
     )

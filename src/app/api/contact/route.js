@@ -1,11 +1,11 @@
-// import {dbConnect} from "@/utils/dbconnect";
+import {dbConnect} from "@/utils/dbconnect";
 import { Contact } from "@/models/contact";
 import { NextResponse } from "next/server";
-require("@/utils/dbconnect")
+// require("@/utils/dbconnect")
 export async function POST(req, res) {
     try {
         const body = await req.json()
-        // await dbConnect();
+        await dbConnect();
         await Contact.create(body)
         return NextResponse.json({
             message: "Message sent successfully!"

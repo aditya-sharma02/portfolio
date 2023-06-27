@@ -16,7 +16,7 @@
 
 .body1 {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .heading,
@@ -29,6 +29,7 @@
     letter-spacing: 2px;
     color: rgb(153, 154, 155);
     font-family: 'Merriweather', serif;
+    z-index: 1;
 
 }
 
@@ -65,13 +66,14 @@
 
 .button {
     border: none;
-    background-color: rgb(40, 40, 40);
+    background-color: rgba(40, 40, 40, 0);
     text-decoration: none;
     color: #7c7a7a;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 20px;
     text-transform: capitalize;
+    z-index: 1;
 }
 
 .button:hover {
@@ -91,7 +93,7 @@
 
 .projectCard {
     margin: 1%;
-    width: 25%;
+    width: 50%;
     height: 30vh;
     background-color: #a13636;
     border: 2px solid wheat;
@@ -131,13 +133,14 @@
 }
 
 .sourcecode {
-    position: absolute;
+    /* position: absolute;
     bottom: 2%;
-    right: 3%;
+    right: 3%; */
     color: #7c7a7a;
     text-decoration: none;
     background-color: #fff;
     border-radius: 50%;
+    width: 8vh;
 
 }
 
@@ -148,7 +151,11 @@
     color: rgb(225, 223, 223);
     font-family: 'Merriweather', serif;
 }
-
+.techname{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
 .tech {
     text-transform: capitalize;
     padding-right: 2%;
@@ -164,15 +171,18 @@
     font-family: 'Merriweather', serif;
     text-transform: capitalize;
 }
-.arrow{
+
+.arrow {
     font-size: 40px;
     color: #7c7a7a;
     transition: all 0.5s ease;
     text-decoration: none;
 }
-.arrow:hover{
+
+.arrow:hover {
     color: #fff;
 }
+
 @keyframes belowheading {
     0.1% {
         width: 0%;
@@ -193,4 +203,34 @@
     }
 }
 
-/*  */
+@media only screen and (max-width: 600px) {
+
+    .heading,
+    .heading1 {
+        font-size: 40px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .idpname{
+        font-size: 25px;
+    }
+    .idpdescription{
+        font-size: large;
+    }
+    .fulldesc{
+        font-size: large;
+    }
+    .tech{
+        font-size: large;
+    }
+    /* .sourcecode{
+        right: 0%;
+    } */
+    .idpcard{
+        width: 95%;
+    }
+}

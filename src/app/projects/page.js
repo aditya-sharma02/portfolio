@@ -8,6 +8,7 @@ import Link from "next/link";
 // import ProjectCard from "../components/projectcard";
 import data from "@/app/data/index"
 import { useState } from "react";
+import Animation1 from "../components/Animation1";
 
 const page = () => {
     const [currdata, setcdata] = useState(data)
@@ -29,6 +30,7 @@ const page = () => {
         <>
             <Navbar />
             <div className={styles.body}>
+            <Animation1/>
                 <div className={styles.heading}>
                     projects
                 </div>

@@ -12,29 +12,23 @@
 .form {
     padding-top: 3%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
     padding-left: 10%;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* height: 40vh; */
+    flex-wrap: wrap;
 }
 
 .formbody {
-
-    /* padding: 4%; */
-    /* background-color: #fff; */
-    height: 100%;
     width: 30%;
     border: 3px solid grey;
-    background-color: rgb(40, 40, 40);
-    z-index: 2;
+    /* background-color: rgb(40, 40, 40); */
+    z-index: 1;
     padding: 5%;
     border-radius: 10%;
+    box-shadow: 1px 1px 10px white;
     transition: all 1s ease-in-out;
     height: 70vh;
-
+    animation: form 2s infinite ease;
 }
-
 .inputdiv {
     padding-top: 3%;
 }
@@ -81,5 +75,19 @@
     color: rgb(255, 45, 45);
 }
 
+.line1 {
+    height: 2px;
+    width: 20%;
+    background-color: grey;
+}
 
-
+@keyframes form {
+    50% {
+        box-shadow: 1px 1px 20px white;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .formbody{
+        width: 90%;
+    }
+}

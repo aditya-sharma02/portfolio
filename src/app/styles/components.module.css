@@ -21,16 +21,19 @@
     transition: all 0.5s ease-in-out;
     box-shadow: 10px 10px 3px rgb(14, 12, 12);
     /* opacity: 0; */
-    animation: projectCard 3s   1  ease-in-out;
+    animation: projectCard 3s 1 ease-in-out;
+    z-index: 1;
 
 }
-.projectCard:hover{
+
+.projectCard:hover {
     box-shadow: 0px 0px 0px rgb(14, 12, 12);
     cursor: pointer;
     /* background-color: #5374932b; */
     /* transform: rotateX(360deg) rotateY(360deg); */
 }
-.projectCard:hover .pname{
+
+.projectCard:hover .pname {
     color: aliceblue;
 }
 
@@ -47,7 +50,8 @@
     color: rgb(40, 40, 40);
     transition: all 0.5s ease-in-out;
 }
-.pdescription{
+
+.pdescription {
     font-size: large;
     /* display: none; */
     color: #f4aaaa;
@@ -56,8 +60,9 @@
     text-transform: capitalize;
     font-family: 'Lora', serif;
     transition: all 1s ease-in-out;
-    text-align: center; 
+    text-align: center;
 }
+
 .alllogos {
     padding-left: 20%;
     padding-right: 20%;
@@ -69,7 +74,10 @@
     /* flex-direction: column; */
 }
 
-.imglogo,.il1,.il2,.il3{
+.imglogo,
+.il1,
+.il2,
+.il3 {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
@@ -82,38 +90,71 @@
     /* background-color: #fff; */
     animation: img 2s infinite ease;
 }
-.il1{
+
+.il1 {
     animation: img 2s 1s infinite ease;
 }
-.il2{
+
+.il2 {
     animation: img 2s 2s infinite ease;
 }
-.il3{
+
+.il3 {
     animation: img 2s 3s infinite ease;
 }
-
+.nav{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.item{
+    margin: 2% 4%;
+}
+.linknav{
+    color: #f4aaaa;
+    text-decoration: none;
+    padding: 2% 10%;
+    font-size: larger;
+    animation: nav 3s   infinite  ease;
+    letter-spacing: 1.5px;
+}
 @keyframes img {
-    /* 0.1%{
-        opacity: 0;
+    50% {
+        box-shadow: 1px 1px 8px rgb(232, 151, 151);
     }
+}
+
+@keyframes nav {
     50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-    } */
-    50%{
-        box-shadow: 1px 1px 10px rgb(183, 106, 106);
+        text-shadow: 0px 0px 10px pink;
     }
 }
 @keyframes projectCard {
-    0.1%{
+    0.1% {
         opacity: 0;
     }
-    70%{
+
+    70% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projectCard {
+        width: 90%;
+        height: 28vh;
+    }
+    .item{
+        margin-top: 20px;
+    }
+    .linknav{
+        font-size: 17px;
     }
 }

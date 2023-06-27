@@ -1,3 +1,4 @@
+import Animation1 from "@/app/components/Animation1";
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/navbar";
 import data from "@/app/data";
@@ -11,6 +12,7 @@ const page = ({ params }) => {
         <>
             <Navbar />
             <div className={styles.body1}>
+                <Animation1 />
                 <div className={styles.heading1}>
                     projects
                 </div>
@@ -19,15 +21,13 @@ const page = ({ params }) => {
                     <div className={styles.l2} />
                 </div>
                 <div className={styles.idpcard}>
-                    <Link style={{textDecoration:"none"}} href={"/projects"} >
+                    <Link style={{ textDecoration: "none" }} href={"/projects"} >
                         <div className={styles.arrow}>↩</div>
                     </Link>
 
                     <div className={styles.idpname}>{tempdata.title}</div>
                     <div className={styles.idpdescription}>{tempdata.description}</div>
-                    <Link href={`${tempdata.link}`}>
-                        <div className={styles.sourcecode}><img src="/github-logo.png" height={60} /></div>
-                    </Link>
+
 
                     <div className={styles.fulldesc}>
                         {tempdata.fulldesc}
@@ -35,10 +35,14 @@ const page = ({ params }) => {
                     <div className={styles.techheading}>
                         Technology Used
                     </div>
-                    {tempdata?.techused?.map((elem, id) => {
-                        return <span key={id} className={styles.tech}>{elem}</span>
-                    })}
-
+                    <div className={styles.techname}>
+                        {tempdata?.techused?.map((elem, id) => {
+                            return <div key={id} className={styles.tech}>{elem}</div>
+                        })}
+                    </div>
+                    <Link href={`${tempdata.link}`}>
+                        <div className={styles.sourcecode}><img src="/github-logo.png" height={60} /></div>
+                    </Link>
                 </div>
             </div>
             <Footer />

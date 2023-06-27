@@ -21,7 +21,6 @@ export default function Home() {
         <div className={styles.circle2}></div>
         <div className={styles.circle3}></div>
         <div className={styles.circle4}></div>
-        {/* <div className={styles.deg45l} /> */}
         <div className={styles.deg45l1} />
         <div className={styles.deg45l2}/>
         {/* animation ends */}

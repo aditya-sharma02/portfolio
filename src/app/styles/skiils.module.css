@@ -79,7 +79,13 @@
 .star5,
 .star6,
 .star7,
-.star8 {
+.star8,
+.star9,
+.star10,
+.star11,
+.star12,
+.star13,
+.star14 {
     position: absolute;
     top: 5%;
     right: 20%;
@@ -94,6 +100,7 @@
 
 .star1 {
     top: 30%;
+    animation: star 5s 2s infinite ease;
     right: 15%;
 }
 
@@ -128,15 +135,38 @@
 .star7 {
     top: 55%;
     animation: star 5s 2s infinite ease;
-
     right: 9%;
 }
 
 .star8 {
     top: 5%;
     right: 7%;
+}
+.star9 {
+    top: 35%;
+    right: 37%;
     animation: star 5s 2s infinite ease;
-
+}
+.star10 {
+    top: 65%;
+    right: 50%;
+}
+.star11 {
+    top: 17%;
+    right: 67%;
+}
+.star12 {
+    top: 75%;
+    right: 27%;
+}
+.star13 {
+    top: 50%;
+    right: 25%;
+}
+.star14 {
+    top: 75%;
+    right: 70%;    
+    animation: star 5s 2s infinite ease;
 }
 
 @keyframes ani {
