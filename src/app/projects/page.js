@@ -50,7 +50,7 @@ const page = () => {
                     {currdata.map((elem, id) => {
                         return <ProjectCard
                             key={id}
-                            index={id}
+                            index={elem.id-1}
                             title={elem.title}
                             description={elem.description}
                         />

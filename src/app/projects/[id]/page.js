@@ -6,8 +6,8 @@ import styles from "@/app/styles/projects.module.css"
 import Link from "next/link";
 
 const page = ({ params }) => {
-    var i = 0;
     var tempdata = data[params.id];
+    // console.log(tempdata)
     return (
         <>
             <Navbar />

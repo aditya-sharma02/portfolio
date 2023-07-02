@@ -10,15 +10,20 @@ const schema = new mongoose.Schema({
         type: String,
         require: true,
         unique: true,
-        // validate(value) {
-        //     if (!validator.isEmail(value)) {
-        //         throw new Error('invalid email id')
-        //     }
-        // }
+        validate(value) {
+            if (!validator.isEmail(value)) {
+                throw new Error('invalid email id')
+            }
+        }
     },
     message: {
         type: String,
         require:true
+    },
+    Date: {
+        require:true,
+        type: Date,
+        default:Date.now
     }
 })
 

@@ -1,10 +1,13 @@
 import styles from "@/app/page.module.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faTrash ,faLightbulb} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import IndexPage from "./components/Head";
+import Head from "next/head";
 const page = () => {
   return (
     <>
+      <Head>
+        <title>hello</title>
+      </Head>
       <div className={styles.body}>
         <div className={styles.html}>Html</div>
         <div className={styles.boots}>bootstrap</div>
@@ -25,8 +28,7 @@ const page = () => {
         <div className={styles.redux}>redux</div>
         <div className={styles.tohomeButton}>
           <Link href='/home' className={styles.link}>Go to Home Page</Link>
-          
-        </div>   
+        </div>
         <div className={styles.hline1}></div>
         <div className={styles.hline2}></div>
         <div className={styles.vline1}></div>
