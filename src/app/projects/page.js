@@ -9,14 +9,14 @@ import data from "@/app/data/index"
 import { useState } from "react";
 import Animation1 from "../components/Animation1";
 
-const page = () => {
+const Page = () => {
     const [currdata, setcdata] = useState(data)
     var temp = [];
     const inputevent = (event) => {
         let value = event.target.value;
         let i = 0; let j = 0;
         for (i = 0; i < data.length; i++) {
-            for (j = 0; j < data[i].techused.length; j++){
+            for (j = 0; j < data[i].techused.length; j++) {
                 if (data[i].techused[j] == value) {
                     temp.push(data[i])
                 }
@@ -29,7 +29,7 @@ const page = () => {
         <>
             <Navbar />
             <div className={styles.body}>
-            <Animation1/>
+                <Animation1 />
                 <div className={styles.heading}>
                     projects
                 </div>
@@ -43,13 +43,13 @@ const page = () => {
                     <input onClick={inputevent} type="submit" value="next.js" className={styles.button} />
                     <input onClick={inputevent} type="submit" value="nest.js" className={styles.button} />
                     <input onClick={inputevent} type="submit" value="django" className={styles.button} />
-                    <input onClick={()=>{setcdata(data)}} type="submit" value="all" className={styles.button} />
+                    <input onClick={() => { setcdata(data) }} type="submit" value="all" className={styles.button} />
                 </div>
                 <div className={styles.projects}>
                     {currdata.map((elem, id) => {
                         return <ProjectCard
                             key={id}
-                            index={elem.id-1}
+                            index={elem.id - 1}
                             title={elem.title}
                             description={elem.description}
                         />
@@ -62,4 +62,4 @@ const page = () => {
         </>
     )
 }
-export default page;
+export default Page;
