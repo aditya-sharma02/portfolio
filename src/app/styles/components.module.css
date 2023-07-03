@@ -10,7 +10,6 @@
     z-index: 2;
 }
 
-/* project card */
 
 .projectCard {
     margin: 3%;
@@ -20,7 +19,6 @@
     border-radius: 9px;
     transition: all 0.5s ease-in-out;
     box-shadow: 10px 10px 3px rgb(14, 12, 12);
-    /* opacity: 0; */
     animation: projectCard 3s 1 ease-in-out;
     z-index: 1;
 
@@ -29,8 +27,6 @@
 .projectCard:hover {
     box-shadow: 0px 0px 0px rgb(14, 12, 12);
     cursor: pointer;
-    /* background-color: #5374932b; */
-    /* transform: rotateX(360deg) rotateY(360deg); */
 }
 
 .projectCard:hover .pname {
@@ -53,10 +49,8 @@
 
 .pdescription {
     font-size: large;
-    /* display: none; */
     color: #f4aaaa;
     padding-top: 5%;
-    /* padding-left: 5%; */
     text-transform: capitalize;
     font-family: 'Lora', serif;
     transition: all 1s ease-in-out;
@@ -70,8 +64,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    /* flex-direction: column; */
 }
 
 .imglogo,
@@ -84,10 +76,7 @@
     margin: 1%;
     z-index: 1;
     background-color: rgb(29, 29, 29);
-    /* border-left: 2px solid grey; */
-    /* border: 1px solid black; */
     box-shadow: 1px 1px 10px rgb(132, 64, 64);
-    /* background-color: #fff; */
     animation: img 2s infinite ease;
 }
 
@@ -110,8 +99,24 @@
     display: flex;
     justify-content: center;
 }
+
+.p1{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+}
+.p2{
+    z-index: 1;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    display: none;
+}
 .item{
-    margin: 2% 4%;
+    margin: 2% 5vw;
     z-index: 2;
 }
 .linknav{
@@ -153,7 +158,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 999px) {
     .projectCard {
         width: 90%;
         height: 30vh;
@@ -165,4 +170,40 @@
     .linknav{
         font-size: 17px;
     }
+    .p1{
+        display: none;
+    }
+    .p2{
+        font-size: xx-large;
+        padding-top: 0%;
+        justify-content: end;
+        width: 100%;
+        display: inline;
+    }
+    
+    .navnew{
+        width: 100%;
+        height: 100vh;
+        background-color: #1f1f1f;
+        z-index: 90;
+        display: flex;
+        flex-direction: column;
+    }
+    .navnew .p1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        z-index: 99;
+        height: 100vh;
+        align-items: center;
+    }
+    .navnew .item{
+        z-index: 100;
+    }
+    .navnew .linknav{
+        z-index: 100;
+        font-size: xx-large;
+    }
 }
+
