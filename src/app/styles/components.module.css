@@ -122,6 +122,11 @@
     animation: nav 3s   infinite  ease;
     letter-spacing: 1.5px;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+.linknav:hover{
+    font-size: x-large;
+    font-weight: bolder;
 }
 @keyframes img {
     50% {
@@ -151,7 +156,7 @@
 @media only screen and (max-width: 600px) {
     .projectCard {
         width: 90%;
-        height: 28vh;
+        height: 30vh;
     }
     .item{
         margin-left: 0%;

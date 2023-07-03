@@ -24,6 +24,7 @@
     letter-spacing: 2.5px;
     font-size: 70px;
     font-family: 'Caprasimo', cursive;
+    /* text-shadow: 2px 4px 1px white; */
     background: linear-gradient(to right, #d45b73 0%, #dd4c4f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

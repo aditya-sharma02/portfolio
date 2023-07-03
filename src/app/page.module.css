@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Caprasimo&family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Hind:wght@300&family=Josefin+Sans:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Merriweather:wght@300&family=Mukta:wght@300&family=Neonderthaw&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&family=Tilt+Prism&family=Ubuntu+Mono&display=swap');
 
 .body {
     background-color: rgb(40, 40, 40);
@@ -8,38 +8,43 @@
     position: relative;
     /* z-index: -2; */
 }
-.hline1,.hline2{
+
+.hline1,
+.hline2 {
     width: 94%;
     height: 10px;
-    background-color: grey;
+    background-color: rgb(56, 55, 55);
     position: absolute;
     bottom: 5%;
-    animation: hl1 9s 1  ease-in;
+    animation: hl1 2.5s 1 ease-in;
 }
 
-.hline2{
+.hline2 {
     position: absolute;
     width: 96%;
     bottom: 8%;
-    animation: hl2 9s   1  ease-in;
+    animation: hl2 2.5s 1 ease-in;
 }
-.vline1,.vline2{
+
+.vline1,
+.vline2 {
     width: 50%;
     height: 10px;
-    background-color: grey;
+    background-color: rgb(88, 87, 87);
     position: absolute;
     right: -10%;
     bottom: 50%;
-    transform: rotate(90deg) translate(0px,-90px);
-    animation: vl1 9s   1 ease-in;
+    transform: rotate(90deg) translate(0px, -90px);
+    animation: vl1 2.5s 1 ease-in;
 }
-.vline2{
+
+.vline2 {
     right: -11.7%;
 }
+
 .tohomeButton {
     height: 20%;
     width: 30%;
-    /* background-color: pink; */
     border: 9px solid pink;
     border-radius: 20px;
     position: absolute;
@@ -48,7 +53,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transition: all 0.4s ease-in-out; */
     z-index: 2;
 }
 
@@ -71,247 +75,226 @@
     font-size: 35px;
 }
 
-.html,
-.css,
-.redux,
-.nextjs,
-.nestjs,
-.mongodb,
-.reactjs,
-.mysql,
-.boots,
-.type,
-.js,
-.nodejs,
-.expressjs,
-.django,
-.python,
-.c,
-.cpp {
-    transform: translate(-1500px);
+.porfoliodiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.portfolio,
+.developer,
+.coder,
+.psolver {
+    text-transform: capitalize;
     font-size: 80px;
-    text-transform: uppercase;
-    color: rgb(115, 120, 120);
-    z-index: 1;
-    animation: html 12s 1 ease-in-out;
+    letter-spacing: 2px;
+    font-family: 'Neonderthaw', cursive;
+    color: rgb(186, 186, 186);
+    z-index: 2;
+}
+
+.developer {
+    padding-top: 8%;
+    animation: dev 1s ease;
+    font-family: 'Bungee Hairline', cursive;
+}
+
+.coder {
+    font-family: 'Bungee Hairline', cursive;
+    animation: cod 1.5s 1 ease;
+}
+
+.psolver {
+    font-family: 'Bungee Hairline', cursive;
+    animation: psol 2s ease;
+
+}
+
+.btn {
+    border-radius: 50%;
     position: absolute;
-    top: 5%;
+    bottom: 15%;
+    right: 15%;
+    animation: btn 4s 1 ease;
+    transition: all 1s ease;
 }
 
-.boots {
-    top: 5%;
-    right: 0%;
+.btn:hover {
+    bottom: 15%;
+    right: 15%;
 }
 
-.expressjs {
-    top: 5%;
-    right: 40%;
+.arrow:hover {
+    height: 13vh;
+    box-shadow: 1px 1px 50px white;
 }
 
-.mongodb {
-    top: 20%;
-    left: 0%;
-
+.arrow {
+    border-radius: 50%;
+    height: 10vh;
+    color: rgb(133, 132, 132);
+    transition: all 1s ease;
 }
 
-.reactjs {
-    top: 20%;
-    right: 35%;
+@keyframes btn {
+    0.1% {
+        opacity: 0;
+    }
 
-}
+    80% {
+        opacity: 0;
+    }
 
-.css {
-    top: 20%;
-    right: 0%;
-
-}
-
-.nextjs {
-    top: 35%;
-}
-
-.cpp {
-    top: 35%;
-    right: 0%;
-}
-
-.nestjs {
-    top: 50%;
-}
-
-.nodejs {
-    top: 50%;
-    right: 0%;
-}
-
-.redux {
-    top: 65%;
-}
-
-.django {
-    top: 65%;
-    right: 50%;
-}
-
-.python {
-    top: 65%;
-    right: 0%;
+    100% {
+        opacity: 1;
+    }
 }
 
 
-.js {
-    top: 65%;
-    right: 30%;
+
+@keyframes dev {
+    0.1% {
+        transform: translate(-520px, 0px);
+    }
+
+    81% {
+        transform: translate(-520px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
-.c {
-    top: 80%;
-    left: 0%;
+@keyframes psol {
+    0.1% {
+        transform: translate(-780px, 0px);
+    }
+
+    90% {
+        transform: translate(-780px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
-.mysql {
-    top: 80%;
-    left: 30%;
+@keyframes cod {
+    0.1% {
+        transform: translate(-290px, 0px);
+    }
+
+    90% {
+        transform: translate(-290px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
-.type {
-
-    top: 80%;
-    right: 0%;
-}
-
-.type,
-.mysql,
-.c,
-.nodejs,
-.mongodb,
-.css,
-.nestjs,
-.reactjs {
-    transform: translate(-1500px);
-    animation: html2 12s 1 ease-in-out;
-}
 @keyframes vl1 {
-    0.1%{
-        transform: rotate(90deg) translate(-1740px,-90px);
+    0.1% {
+        transform: rotate(90deg) translate(-1740px, -90px);
     }
-    80%{
-        transform: rotate(90deg) translate(-1740px,-90px);
+
+    80% {
+        transform: rotate(90deg) translate(-1740px, -90px);
     }
-    100%{
-        transform: rotate(90deg) translate(0px,-90px);
+
+    100% {
+        transform: rotate(90deg) translate(0px, -90px);
     }
 }
+
 @keyframes hl1 {
-    0.1%{
-    transform: translate(-2430px);
-    }
-    90%{
+    0.1% {
         transform: translate(-2430px);
-        }
-    100%{
+    }
+
+    80% {
+        transform: translate(-2430px);
+    }
+
+    100% {
         transform: translate(00px);
     }
 }
+
 @keyframes hl2 {
-    0.1%{
-    transform: translate(-2430px);
-    }
-    90%{
+    0.1% {
         transform: translate(-2430px);
-        }
-    100%{
+    }
+
+    80% {
+        transform: translate(-2430px);
+    }
+
+    100% {
         transform: translate(00px);
     }
-}
-
-@keyframes html2 {
-    0.1% {
-        transform: translate(1480px);
-    }
-
-    100% {
-        transform: translate(-1500px);
-    }
-
-}
-
-@keyframes html {
-    100% {
-        transform: translate(1500px);
-    }
-}
-@keyframes html_1 {
-    100% {
-        transform: translate(400px);
-    }
-
-}
-@keyframes html2_1 {
-    0.1% {
-        transform: translate(370px);
-    }
-
-    100% {
-        transform: translate(-400px);
-    }
-
 }
 
 @media only screen and (max-width: 600px) {
 
-    .html,
-    .css,
-    .redux,
-    .nextjs,
-    .nestjs,
-    .mongodb,
-    .reactjs,
-    .mysql,
-    .boots,
-    .type,
-    .js,
-    .nodejs,
-    .expressjs,
-    .django,
-    .python,
-    .c,
-    .cpp {
-        transform: translate(-370px);
-        font-size: 20px;
-        animation: html_1  7s 1  ease-in-out;
-
-    }
-
-    .type,
-    .mysql,
-    .c,
-    .nodejs,
-    .mongodb,
-    .css,
-    .nestjs,
-    .reactjs {
-       animation: html2_1  7s 1  ease-in-out;
-    }
     .tohomeButton {
         height: 16%;
         width: 45%;
         top: 35%;
         left: 25%;
-       
+
     }
-    
+
     .tohomeButton:hover {
         border: 11px solid pink;
         font-size: 7px;
     }
-    
+
     .link {
         text-align: center;
         font-size: 20px;
     }
-    
+
     .link:hover {
         font-size: 23px;
+    }
+
+    .portfolio {
+        font-size: 60px;
+        padding-top: 20%;
+    }
+
+    .developer,
+    .coder,
+    .psolver {
+        font-size: 40px;
+    }
+
+    .developer {
+        padding-top: 35%;
+    }
+
+    .vline1,
+    .vline2 {
+        width: 200%;
+        height: 2px;
+        right: -69%;
+    }
+
+    .vline2 {
+        right: -70.7%;
+    }
+
+    .hline1,
+    .hline2 {
+        width: 94%;
+        height: 5px;
+    }
+
+    .hline2 {
+        width: 96%;
+        bottom: 6%;
     }
 }

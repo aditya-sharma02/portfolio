@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link className={styles.linknav} href='/projects'>Projects</Link>
                 </div>
                 <div className={styles.item}>
-                    <Link className={styles.linknav} href='/contact'>contact</Link>
+                    <Link className={styles.linknav} href='/dropmessage'>Contact</Link>
                 </div>
                 <div className={styles.item}>
                     <Link className={styles.linknav} href='/skills'>Skills</Link>

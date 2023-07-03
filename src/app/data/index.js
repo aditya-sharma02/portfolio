@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         title: "Airport Management System",
-        description: "A full-stack project which eficiently manages the whole airport including passenger data, flight data, routes. ",
+        description: "A full-stack project which eficiently manages the whole airport data ",
         techused: ["full-stack", "mongodb", "mysql", "express.js", "css", "bootstrap", "Material-Ui"],
         fulldesc: "An airport management system is a specialized digital platform that automates and streamlines the main airport operations including passenger processing, baggage tagging and handling, arrival/departure operations, departure control systems, information distribution, and air traffic control (ATC).",
         link:"https://github.com/aditya-sharma02/Airport_Management_System"

@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Hind:wght@300&family=Josefin+Sans:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Merriweather:wght@300&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&family=Tilt+Prism&family=Ubuntu+Mono&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Fira+Sans&family=Geologica:wght@100&family=Hind:wght@300&family=Josefin+Sans:wght@100&family=Kanit&family=Lily+Script+One&family=Lobster&family=Lora&family=Merriweather:wght@300&family=Mukta:wght@300&family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@300&family=Sarabun:wght@100&family=Satisfy&family=Tilt+Prism&family=Ubuntu+Mono&display=swap');
-
-.body {
+.body,
+.bodyk {
     background-color: rgb(40, 40, 40);
     width: 100%;
     min-height: 80vh;
     color: antiquewhite;
-    position: relative;
+}
 
+.body {
+    position: relative;
+}
+
+.bodyk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form {
@@ -30,6 +38,7 @@
     height: 70vh;
     animation: form 2s infinite ease;
 }
+
 .inputdiv {
     padding-top: 3%;
 }
@@ -81,7 +90,8 @@
     width: 20%;
     background-color: grey;
 }
-.contact_div{
+
+.contact_div {
     /* background-color: #fff; */
     height: 70vh;
     width: 50%;
@@ -91,12 +101,14 @@
     justify-content: center;
     align-items: center;
 }
+
 .contact_div h2 {
     color: rgb(228, 133, 149);
     font-family: 'Hind', sans-serif;
     text-transform: capitalize;
 }
-.inside_contact_div{
+
+.inside_contact_div {
     border: 2px solid gray;
     border-radius: 20px;
     justify-content: center;
@@ -104,28 +116,34 @@
     width: 60%;
     display: flex;
 }
-.logos_contact{
+
+.logos_contact {
     margin: auto 5%;
 }
-.innlogo{
+
+.innlogo {
     background-color: rgb(228, 133, 149);
     border-radius: 50%;
-    transition: all 0.5s ease ;
+    transition: all 0.5s ease;
 }
-.innlogo:hover{
-    background-color:pink;
+
+.innlogo:hover {
+    background-color: pink;
     box-shadow: 1px 1px 10px white;
 }
+
 @keyframes form {
     50% {
         box-shadow: 1px 1px 20px white;
     }
 }
+
 @media only screen and (max-width: 600px) {
-    .formbody{
+    .formbody {
         width: 90%;
     }
-    .contact_div{
+
+    .contact_div {
         width: 80%;
     }
 }

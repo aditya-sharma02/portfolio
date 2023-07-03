@@ -29,7 +29,7 @@ export default function Home() {
             <div className={styles.skill}>~ I am </div>
             <div className={styles.name}>Aditya Sharma</div>
             <div className={styles.skill}>Web Designer</div>
-            <div className={styles.introdata}>I am aspiring Full stack Desiner , who allways wants to learn new technologies </div>
+            <div className={styles.introdata}>This is ~ <span className={styles.skill}>Aditya Sharma</span>, MERN    Developer located in India, looking for working around the globe</div>
           </div>
           <div className={styles.logos}>
           </div>
