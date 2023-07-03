@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import ProjectCard from "../components/Projectcard";
 import Navbar from "../components/navbar";
 import styles from "@/app/styles/projects.module.css"
-import Link from "next/link";
 import data from "@/app/data/index"
 import { useState } from "react";
 import Animation1 from "../components/Animation1";

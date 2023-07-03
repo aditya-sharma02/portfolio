@@ -19,7 +19,7 @@ const Logos = () => {
                 <div className={styles.il2}><Image src='/python.png' height={80} width={80} alt="Image" /></div>
                 <div className={styles.il2} style={{ width: "12.5vw" }}><Image src='/react.png' height={80} width={80} alt="Image" /></div>
                 <div className={styles.il2}><Image src='/redux.png' height={80} width={80} alt="Image" /></div>
-                <div className={styles.il2}><img src='/typescript.png' style={{ height: "93px" }} /></div>
+                <div className={styles.il2}><Image src='/typescript.png' style={{ height: "93px" }} /></div>
 
                 <div className={styles.il3}><Image src='/nestjs.png' style={{ height: "96px" }} height={80} width={80} alt="Image" /></div>
                 <div className={styles.il3}><Image src='/material-ui.png' style={{ height: "96px" }} height={80} width={80} alt="Image" /></div>
