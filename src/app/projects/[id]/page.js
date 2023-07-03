@@ -4,6 +4,7 @@ import Navbar from "@/app/components/navbar";
 import data from "@/app/data";
 import styles from "@/app/styles/projects.module.css"
 import Link from "next/link";
+import Image from "next/image";
 
 const page = ({ params }) => {
     var tempdata = data[params.id];
@@ -41,7 +42,7 @@ const page = ({ params }) => {
                         })}
                     </div>
                     <Link href={`${tempdata.link}`}>
-                        <div className={styles.sourcecode}><img src="/github-logo.png" height={60} /></div>
+                        <div className={styles.sourcecode}><Image src="/github-logo.png" height={60} width={60} alt="Image_Github"/></div>
                     </Link>
                 </div>
             </div>

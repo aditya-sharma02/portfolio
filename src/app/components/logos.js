@@ -16,10 +16,10 @@ const Logos = () => {
                 <div className={styles.il1}><Image src='/mongodb.png' height={88} width={88} alt="Image" /></div>
                 <div className={styles.il1}><Image src='/mysql.png' height={88} width={88} alt="Image" /></div>
                 <div className={styles.il1}><Image src='/nodejs.png' height={88} width={88} alt="Image" /></div>
-                <div className={styles.il2}><Image src='/python.png' height={80} width={80} alt="Image" /></div>
-                <div className={styles.il2} style={{ width: "12.5vw" }}><Image src='/react.png' height={80} width={80} alt="Image" /></div>
-                <div className={styles.il2}><Image src='/redux.png' height={80} width={80} alt="Image" /></div>
-                <div className={styles.il2}><Image src='/typescript.png' style={{ height: "93px" }} /></div>
+                <div className={styles.il2}><Image src='/python.png' height={88} width={88} alt="Image" /></div>
+                <div className={styles.il2} style={{ width: "12.5vw" }}><Image src='/react.png' height={88} width={88} alt="Image" /></div>
+                <div className={styles.il2}><Image src='/redux.png' height={88} width={88} alt="Image" /></div>
+                <div className={styles.il2}><Image src='/typescript.png' height={88} width={88} alt="Image" style={{ height: "93px" }} /></div>
 
                 <div className={styles.il3}><Image src='/nestjs.png' style={{ height: "96px" }} height={80} width={80} alt="Image" /></div>
                 <div className={styles.il3}><Image src='/material-ui.png' style={{ height: "96px" }} height={80} width={80} alt="Image" /></div>

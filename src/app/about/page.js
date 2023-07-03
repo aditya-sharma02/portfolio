@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/navbar";
 import styles from "@/app/styles/about.module.css"
@@ -41,7 +42,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className={styles.image}>
-                    <img className={styles.img} src="/aditya.png"/>
+                    <Image height={300} width={380} alt="Image_Aditya" className={styles.img} src="/aditya.png"/>
                 </div>
             </div>
             <Footer />
