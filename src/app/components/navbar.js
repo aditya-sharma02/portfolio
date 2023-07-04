@@ -11,7 +11,6 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
 
     const [openMenu, setOpenMenu] = useState(false);
-    console.log("value " + openMenu)
     return (
         <>
             <div className={styles.nav}>
