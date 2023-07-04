@@ -5,7 +5,6 @@ const Logos = () => {
         <>
 
             <div className={styles.alllogos} >
-
                 <div className={styles.imglogo}>
                     <Image src='/html.png' height={88} width={88} alt="Image"></Image>
                 </div>

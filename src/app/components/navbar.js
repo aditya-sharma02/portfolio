@@ -37,6 +37,9 @@ const Navbar = () => {
                         <div className={styles.item}>
                             <Link className={styles.linknav} href='/skills' onClick={() => setOpenMenu(false)}>Skills</Link>
                         </div>
+                        <div className={styles.item}>
+                            <Link className={styles.linknav} href='https://drive.google.com/file/d/1ikAJPxQ1-Pvg61DfaxheLLuQnezrFdyl/view?usp=sharing' onClick={() => setOpenMenu(false)}>Resume</Link>
+                        </div>
                     </div>
                     
 
