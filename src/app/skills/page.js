@@ -1,4 +1,5 @@
 "use client"
+import React from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 import styles from "@/app/styles/skiils.module.css"
@@ -11,7 +12,7 @@ import { TbBrandNextjs, TbBrandCpp } from 'react-icons/tb'
 import { IoLogoJavascript } from 'react-icons/io'
 import { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
     const [state, setstate] = useState(1);
     return (
         <>
@@ -114,4 +115,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Page;
