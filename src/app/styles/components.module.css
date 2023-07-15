@@ -130,7 +130,7 @@
     font-size: 17px;
     animation: nav 3s infinite ease;
     letter-spacing: 1.5px;
-    z-index: 2;
+    z-index: 200;
     transition: all 0.3s ease;
 }
 
@@ -177,7 +177,7 @@
     }
 
     .linknav {
-        font-size: 17px;
+        font-size: 27px;
     }
 
     .p1 {

@@ -37,7 +37,7 @@ const Navbar = () => {
                             <Link className={styles.linknav} href='/skills' onClick={() => setOpenMenu(false)}>Skills</Link>
                         </div>
                         <div className={styles.item}>
-                            <Link className={styles.linknav} href='https://drive.google.com/file/d/1ikAJPxQ1-Pvg61DfaxheLLuQnezrFdyl/view?usp=sharing' onClick={() => setOpenMenu(false)}>Resume</Link>
+                            <Link className={styles.linknav} href='https://drive.google.com/file/d/1FoPmZy4MgDH2G9-9aOpbSQNgCuk0kOfH/view?usp=sharing' onClick={() => setOpenMenu(false)}>Resume</Link>
                         </div>
                     </div>
                     
