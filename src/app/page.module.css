@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Carter+One&family=Kanit:ital@0;1&family=Lato&family=Nunito+Sans:wght@300&family=Passions+Conflict&family=Roboto:ital,wght@1,300&family=Rubik+Dirt&family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Carter+One&family=Kanit:ital@0;1&family=Lato&family=Nunito+Sans:wght@300&family=Passions+Conflict&family=Roboto:ital,wght@1,300&family=Rubik+Dirt&family=Rubik+Pixels&family=The+Girl+Next+Door&display=swap');
 
 .body {
     background-color: rgb(40, 40, 40);
@@ -97,16 +97,19 @@
 .developer {
     padding-top: 8%;
     animation: dev 1s ease;
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'The Girl Next Door', cursive;
+
 }
 
 .coder {
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'The Girl Next Door', cursive;
+
     animation: cod 1.5s 1 ease;
 }
 
 .psolver {
-    font-family: 'Bungee Hairline', cursive;
+    font-family: 'The Girl Next Door', cursive;
+
     animation: psol 2s ease;
 
 }
